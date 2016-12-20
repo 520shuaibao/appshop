@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>我的收藏</title>
+
+
+    <link rel="stylesheet" type="text/css" href="public/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/mycollect.css"/>
+    <script src="public/js/jquery_1_11_1min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="public/js/jaliswall.js"></script>
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            function mycheck(val) {
+                if ($("#collect" + val).is(':checked')) {
+                    $(".label" + val).addClass("collectd");
+                    $(".collectbox").fadeIn(300)
+                    $(".kong").fadeIn()
+                }
+                else {
+                    $(".label" + val).removeClass("collectd");
+                    $(".collectbox").fadeOut(300)
+                    $(".kong").fadeOut()
+                }
+            }
+        });
+
+    </script>
+</head>
+
+<body>
+<div class="go-order-header">
+    <a class="icona" href="self.html">
+        <img src="public/images/left.png"/>
+    </a>
+    <h3>我的收藏</h3>
+
+    <a class="text-top">
+        编辑
+    </a>
+</div>
+
+<ul class="wall">
+    <div class="wall-column">
+        <div class="pic" id="">
+            <a href="detail.html">
+                <img src="public/images/list-ph01.png">
+                <p>韩版青少年休闲修身长袖紧身衬衫</p>
+                <b>￥58</b><del>￥538</del>
+            </a>
+        </div><div class="pic" id="">
+        <a href="detail.html">
+            <img src="public/images/list-ph01.png">
+            <p>韩版青少年休闲修身长袖紧身衬衫</p>
+            <b>￥58</b><del>￥538</del>
+        </a>
+
+    </div></div>
+    <div class="wall-column">
+        <div class="pic" id="">
+            <a href="detail.html">
+                <img src="public/images/list-ph02.png">
+                <p>韩版青少年休闲修身长袖紧身衬衫</p>
+                <b>￥58</b><del>￥538</del>
+            </a>
+        </div><div class="pic" id="">
+        <a href="detail.html">
+            <img src="public/images/list-ph02.png">
+            <p>韩版青少年休闲修身长袖紧身衬衫</p>
+            <b>￥58</b><del>￥538</del>
+        </a>
+
+    </div></div></ul>
+
+
+
+</body>
+</html>

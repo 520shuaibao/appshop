@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>新增地址</title>
+
+
+    <link rel="stylesheet" type="text/css" href="public/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/go-address.css"/>
+    <script src="public/js/jquery_1_11_1min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+<header class="go-order-header">
+    <a class="icona" href="self.html">
+        <img src="public/images/left.png"/>
+    </a>
+    <h3>新增地址</h3>
+
+    <a class="text-top" >
+    </a>
+</header>
+
+<div class="contaniner fixed-conta">
+    <form action="" method="post" class="change-address" id="save">
+        <ul>
+            <li>
+                <label class="addd">收货人：</label>
+                <input type="text" value="" required="required"/>
+            </li>
+            <li>
+                <label class="addd">手机号：</label>
+                <input type="tel" value="" required="required"/>
+            </li>
+            <li>
+                <label class="addd">所在地区：</label>
+                <select>
+                    <option>山西省</option>
+                    <option>陕西省</option>
+                    <option>河南省</option>
+                </select>
+                <select>
+                    <option>忻州市</option>
+                    <option>朔州市</option>
+                    <option>吕梁市</option>
+                </select>
+                <select>
+                    <option>河曲县</option>
+                    <option>保德县</option>
+                    <option>偏关县</option>
+                </select>
+            </li>
+            <li>
+                <label class="addd">详细地址：</label>
+                <textarea required="required"></textarea>
+            </li>
+        </ul>
+
+        <ul>
+            <li class="checkboxa">
+                <input type="checkbox" id="check"/>
+                <label class="check" for="check" onselectstart="return false"  >设置为默认地址</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>删除此地址</h3>
+            </li>
+        </ul>
+        <input type="submit" value="保存" />
+    </form>
+</div>
+
+<script src="public/js/jquery_1_11_1min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $(".checkboxa label").on('touchstart',function(){
+        if($(this).hasClass('checkd')){
+            $(".checkboxa label").removeClass("checkd");
+        }else{
+            $(".checkboxa label").addClass("checkd");
+        }
+    })
+</script>
+
+
+</body>
+</html>

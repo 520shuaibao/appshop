@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>商城</title>
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/index.css"/>
+    <link rel="stylesheet" href="public/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/swiper.min.css"/>
+    <script src="public/js/index.js"></script>
+    <script src="public/js/jquery_1_11_1min.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+<!--导航栏-->
+<header class="page-header">
+    <div class="text-center">商城</div>
+</header>
+
+
+<!--移动端轮播图-->
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="public/images/TB1jSlfOXXXXXbYapXXXXXXXXXX-380-400.jpg"></div>
+        <div class="swiper-slide"><img src="public/images/TB2AMuXc2SM.eBjSZFNXXbgYpXa_!!2859407692.jpg_570x10000.jpg"></div>
+        <div class="swiper-slide"><img src="public/images/TB1w2_eMVXXXXcOXFXXSutbFXXX.jpg"></div>
+
+        <div class="swiper-slide"><img src="public/images/TB25HXva4jxQeBjy1zbXXbqApXa_!!1731739137.jpg_400x400.jpg"></div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="public/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+</script>
+
+<!--中部导航-->
+<section class="shop">
+    <h3>
+        <a href="javascript:;">
+            服装
+            <span><img src="public/images/index3.png"/></span>
+        </a>
+    </h3>
+    <dl>
+        <dd>
+            <a href="boy-zq.html">
+                <img src="public/images/index-ph01.png"/>
+                <b>男装</b>
+            </a>
+        </dd>
+        <dd>
+            <a href="gril-zq.html">
+                <img src="public/images/index-ph02.png"/>
+                <b>女装</b>
+            </a>
+        </dd>
+    </dl>
+
+    <h3>
+        <a href="javascript:;">
+            食品
+            <span><img src="public/images/index3.png"/></span>
+        </a>
+    </h3>
+    <dl>
+        <dd>
+            <a href="javascript:;">
+                <img src="public/images/index-ph04.png"/>
+                <b>切糕</b>
+            </a>
+        </dd>
+        <dd>
+            <a href="javascript:;">
+                <img src="public/images/index-03.png"/>
+                <b>酥饼</b>
+            </a>
+        </dd>
+    </dl>
+</section>
+
+<!--主页尾部-->
+<div class="page-footer fixed-footer">
+    <ul>
+        <li class="active">
+            <a href="index.html">
+                <img src="public/images/footer0001.png"/>
+                <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="assort.html">
+                <img src="public/images/footer002.png"/>
+                <p>分类</p>
+            </a>
+        </li>
+        <li>
+            <a href="shop.html">
+                <img src="public/images/footer003.png"/>
+                <p>购物车</p>
+            </a>
+        </li>
+        <li>
+            <a href="self.html">
+                <img src="public/images/footer004.png"/>
+                <p>个人中心</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
