@@ -1,0 +1,59 @@
+@import "common.css";
+@import "base.css";
+.go-order-header {
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  top: 0;
+  position: fixed;
+}
+.go-order-header h3 {
+  text-align: center;
+  margin-top: 0rem;
+  position: relative;
+  top: -2.5rem;
+  font-size: 1.8rem;
+}
+.go-order-header img {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+.integral {
+  width: 100%;
+}
+.integral h3 {
+  width: 100%;
+  background-color: #fff;
+  margin: 3% 0;
+  text-align: center;
+  padding: 6% 0;
+  font-weight: normal;
+  color: #FC605A;
+  font-size: 1.9em;
+}
+.integral dl {
+  width: 90%;
+  padding: 4% 5%;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: solid 1px #ccc;
+}
+.integral dl dd {
+  float: left;
+}
+.integral dl dd p {
+  font-size: 1.305rem;
+  color: #333;
+  line-height: 1.7;
+}
+.integral dl dd time {
+  font-size: 1.03em;
+  color: #999;
+}
+.integral dl dt {
+  float: right;
+  font-size: 1.56rem;
+  padding: 3% 0;
+  color: #FC605A;
+}
